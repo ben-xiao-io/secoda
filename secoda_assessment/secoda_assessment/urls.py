@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from metadata_extractor.views import get_table_metadata
+from metadata_extractor.views import get_table_metadata, get_table_metadata_from_str
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/get-table-metadata/', get_table_metadata, name='get_table_metadata'),
+    path('api/get-table-metadata-from-str/', get_table_metadata_from_str, name='get_table_metadata_from_str'),
 ]
