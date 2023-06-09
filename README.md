@@ -11,7 +11,7 @@ The requirements are in `requirements.txt`
 
 1. Django files are stored in `/secoda_assessment`
 2. Run `python manage.py runserver`
-3. Require POST endpoint is listed here `http://127.0.0.1:8000/api/get-table-metadata/`
+3. Required POST endpoint is at this URL: `http://127.0.0.1:8000/api/get-table-metadata/`
 
 # Endpoint details
 
@@ -27,5 +27,5 @@ The end point is expecting a JSON body of the following format from a POST metho
 }
 ```
 
-With the provided test:    
+With the provided test, this is an example with credentials omitted:    
 `{'host': 'secoda-demo-postgres.caymkhepkkox.us-east-1.rds.amazonaws.com', 'db_name': 'postgres', 'username': 'USERNAME OMITTED', 'password': 'PASSWORD OMITTED', 'port': PORT_OMITTED}`
